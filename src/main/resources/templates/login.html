@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <!-- Include Bootstrap CSS or any other CSS framework you prefer -->
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form th:action="@{/login}" method="post">
+            <div class="form-group">
+                <label for="username" aria-placeholder="shivam">Username</label>
+                <input type="text" class="form-control" id="username" name="username" />
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" />
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+    <!-- Include Bootstrap JS or any other JS framework you prefer -->
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+</body>
+</html>
